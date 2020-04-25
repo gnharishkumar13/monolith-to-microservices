@@ -3,7 +3,7 @@ services:
   reverseproxy:
     build:
       context: .
-    image: gnharishkumar//reverseproxy 
+    image: gnharishkumar/reverseproxy
   backend_user:
     build:
       context: ../../udacity-c3-restapi-user

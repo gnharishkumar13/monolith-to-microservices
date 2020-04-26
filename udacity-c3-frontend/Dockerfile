@@ -1,5 +1,5 @@
 ## Build
-FROM beevelop/ionic AS ionic
+FROM marcoturi/ionic:alpine AS ionic
 # Create app directory
 WORKDIR /usr/src/app
 # Install app dependencies

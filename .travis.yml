@@ -22,7 +22,7 @@ install:
 
 after_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker image push "$DOCKER_USERNAME"/udacity-c3-deployment:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-c3-restapi-feed:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-c3-restapi-user:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-c3-frontend:local
+  - docker image push "$DOCKER_USERNAME"/udacity-deployment:latest
+  - docker image push "$DOCKER_USERNAME"/udacity-restapi-feed:latest
+  - docker image push "$DOCKER_USERNAME"/udacity-restapi-user:latest
+  - docker image push "$DOCKER_USERNAME"/udacity-frontend:local

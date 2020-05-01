@@ -12,7 +12,7 @@ spec:
         service: backend-user
     spec:
       containers:
-      - image: gnharishkumar/udacity-restapi-user:latest
+      - image: gnharishkumar/udacity-restapi-user:$VERSION
         name: backend-user 
         imagePullPolicy: Always  
         resources:
@@ -27,7 +27,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: env-config
-              key: URL 
+              key: URL
         - name: JWT_SECRET
           valueFrom:
             configMapKeyRef:

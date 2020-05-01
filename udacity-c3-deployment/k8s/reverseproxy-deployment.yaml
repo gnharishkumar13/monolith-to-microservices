@@ -12,7 +12,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-      - image: gnharishkumar/reverseproxy
+      - image: gnharishkumar/reverseproxy:$VERSION
         name: reverseproxy
         imagePullPolicy: Always          
         resources:
@@ -25,5 +25,3 @@ spec:
         ports:
         - containerPort: 8080
       restartPolicy: Always
-
-

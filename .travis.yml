@@ -22,7 +22,7 @@ install:
 
 after_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker image push "$DOCKER_USERNAME"/reverseproxy:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-restapi-feed:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-restapi-user:latest
-  - docker image push "$DOCKER_USERNAME"/udacity-frontend:local
+  - docker image push "$DOCKER_USERNAME"/reverseproxy:"$VERSION"
+  - docker image push "$DOCKER_USERNAME"/udacity-restapi-feed:"$VERSION"
+  - docker image push "$DOCKER_USERNAME"/udacity-restapi-user:"$VERSION"
+  - docker image push "$DOCKER_USERNAME"/udacity-frontend:"$VERSION"
